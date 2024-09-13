@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="wrapper">
+           <form id="form">
+            <div class="input-div">
+                <input type="text" name="container" id="">
+            </div>
+        <div class="main">
+            <button id="same" onclick="container.value='' " value="AC">AC</button>
+            <button id="same" onclick="container.value=container.value.toString().slice(0,-1)" value="DEL">DEL</button>
+            <button  id="same" onclick="container.value+='%' " value="%">%</button>
+            <button  id="same" onclick="container.value+='/' " value="/">/</button>
+            <button  id="same" onclick="container.value+='7' " value="7">7</button>
+            <button  id="same" onclick="container.value+='8' " value="8">8</button>
+            <button id="same" onclick="container.value+='9' " value="9">9</button>
+            <button  id="same" onclick="container.value+='*' " value="*">*</button>
+            <button type="submit"id="same"onclick="container.value+='4' " value="4">4</button>
+            <button id="same" onclick="container.value+='5' " value="5">5</button>
+            <button  id="same" onclick="container.value+='6' " value="6">6</button>
+            <button  id="same" onclick="container.value+='+' " value="+">+</button>
+            <button id="same" onclick="container.value+='1' " value="1">1</button>
+            <button id="same" onclick="container.value+='2' " value="2">2</button>
+            <button id="same" onclick="container.value+='3' " value="3">3</button>
+            <button id="same" onclick="container.value+='-' " value="-">-</button>
+            <button id="same" onclick="container.value+='00' " value="00">00</button>
+            <button id="same" onclick="container.value+='0' " value="0">0</button>
+            <button id="same" onclick="container.value+='.' " value=".">.</button>
+            <button id="same" onclick="container.value=eval(container.value) " value="=">=</button>
+            
+        </div>
+        </form>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
